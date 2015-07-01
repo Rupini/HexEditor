@@ -1,0 +1,15 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:HexEditor" x:Class="HexEditor.MainWindow"
+        Title="MainWindow" Height="811.757" Width="983.621">
+    <Grid Margin="0,0,0,0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>-->
+        <Button Content="Button" HorizontalAlignment="Left" Margin="48,19,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="159,19,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <local:MainBlackBoard x:Name="hexGrid" Width="Auto" Height="Auto" Margin="100" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" Grid.ColumnSpan="2" MinWidth="200" MinHeight="200" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+    </Grid>
+</Window>
